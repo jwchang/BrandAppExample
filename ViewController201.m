@@ -28,6 +28,30 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    UILabel *label10 =  [[ UILabel  alloc] initWithFrame:CGRectMake(10, 400, 300, 40) ];
+    
+    label10.text = @"스마트앱콘텐츠과";
+    [self.view  addSubview:label10];
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // 1
     UILabel *label1 = [[ UILabel alloc] initWithFrame:CGRectMake(20, 100, 280, 20) ];
     label1.text = @"부산경상대학교";

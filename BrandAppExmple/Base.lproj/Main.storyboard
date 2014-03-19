@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WWr-FR-ufu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WWr-FR-ufu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -50,6 +50,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="cIM-jB-Sfx"/>
                         <segue destination="NPk-lU-Bpb" kind="relationship" relationship="viewControllers" id="Zpe-8W-MUr"/>
                         <segue destination="ewm-yD-C9u" kind="relationship" relationship="viewControllers" id="Ajf-dn-gLD"/>
+                        <segue destination="hPb-Xk-rRb" kind="relationship" relationship="viewControllers" id="MiM-oZ-T1o"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9X-if-Vgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -383,6 +384,222 @@
             </objects>
             <point key="canvasLocation" x="611" y="623"/>
         </scene>
+        <!--Table View Controller - 홍보관-->
+        <scene sceneID="aUL-Be-mcb">
+            <objects>
+                <tableViewController id="DG5-iB-c71" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ieF-TF-3Fc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="5yt-09-tnw">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uWu-e2-20S">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uWu-e2-20S" id="mdy-v0-Iyo">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="홍보동영상" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYY-kI-atI">
+                                                    <rect key="frame" x="53" y="11" width="74" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CFW-C8-E2S" kind="push" id="4FV-KQ-K5X"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="n0M-Ge-XZ7">
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n0M-Ge-XZ7" id="XCi-CV-Tju">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="포토갤러리" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nar-ra-3Ub">
+                                                    <rect key="frame" x="54" y="11" width="74" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7LH-Hd-MTE" kind="push" id="4v1-5m-xin"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="JPG-sl-0Jt">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JPG-sl-0Jt" id="t0I-tC-Bco">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="자랑스런 잔메인" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-iI-NNo">
+                                                    <rect key="frame" x="54" y="11" width="108" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="zLl-R5-a8k" kind="push" id="tQw-de-Oqb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="DQk-KQ-qXQ">
+                                        <rect key="frame" x="0.0" y="196" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DQk-KQ-qXQ" id="Z6R-dt-Rzx">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="잔메UCC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hk-ry-oAb">
+                                                    <rect key="frame" x="54" y="11" width="67" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="PB2-oS-PCB" kind="push" id="3EY-0H-QiA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="WdV-jk-sG7">
+                                        <rect key="frame" x="0.0" y="240" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WdV-jk-sG7" id="Ph2-EQ-ing">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="대학공식SNS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVL-fC-JRJ">
+                                                    <rect key="frame" x="53" y="11" width="94" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kJE-4V-awK" kind="push" id="H6G-Ei-Xaq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="DG5-iB-c71" id="AD6-wb-LkE"/>
+                            <outlet property="delegate" destination="DG5-iB-c71" id="Wdt-gU-U8i"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="홍보관" id="zcb-GJ-0qT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDO-99-1O1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="1391"/>
+        </scene>
+        <!--View Controller401 - 홍보동영상-->
+        <scene sceneID="TPm-0c-glR">
+            <objects>
+                <viewController id="CFW-C8-E2S" customClass="ViewController401" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L55-KC-8Cf"/>
+                        <viewControllerLayoutGuide type="bottom" id="NCu-Sv-t4I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ghz-2T-KtX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="홍보동영상" id="TDd-Bf-Pmg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gp4-RB-qqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1055" y="1399"/>
+        </scene>
+        <!--View Controller402 - 포토갤러리-->
+        <scene sceneID="KXQ-BT-3Ly">
+            <objects>
+                <viewController id="7LH-Hd-MTE" customClass="ViewController402" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l4o-bR-n4J"/>
+                        <viewControllerLayoutGuide type="bottom" id="vj8-k9-3qj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oM1-2Y-eGe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="포토갤러리" id="hBb-SH-yDq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7Z-og-Sbm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="1399"/>
+        </scene>
+        <!--View Controller403 - 자랑스런 잔메인-->
+        <scene sceneID="jd5-lB-YYK">
+            <objects>
+                <viewController id="zLl-R5-a8k" customClass="ViewController403" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yDY-c4-4wZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="vjC-CT-DAJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5qF-QX-WYv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="자랑스런 잔메인" id="mu6-QQ-bql"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7l3-9k-2Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="1391"/>
+        </scene>
+        <!--View Controller404 - 잔메UCC-->
+        <scene sceneID="2fx-ht-Pxu">
+            <objects>
+                <viewController id="PB2-oS-PCB" customClass="ViewController404" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YVt-wb-UXO"/>
+                        <viewControllerLayoutGuide type="bottom" id="VrU-Jj-eoU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hTP-2r-Quv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="잔메UCC" id="sPJ-bt-exg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGT-eK-Da5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="1377"/>
+        </scene>
+        <!--View Controller405 - 대학공식SNS-->
+        <scene sceneID="Gxb-Qf-hVI">
+            <objects>
+                <viewController id="kJE-4V-awK" customClass="ViewController405" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TpG-de-tjo"/>
+                        <viewControllerLayoutGuide type="bottom" id="IqU-ts-v5A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3HZ-b5-Swk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="대학공식SNS" id="amc-Hk-scf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwX-yD-Hxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2853" y="1377"/>
+        </scene>
         <!--View Controller301 - 공지사항-->
         <scene sceneID="4v6-La-fvp">
             <objects>
@@ -516,6 +733,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pcr-7d-Fru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101" y="623"/>
+        </scene>
+        <!--Navigation Controller - 홍보관-->
+        <scene sceneID="G7Q-UB-ow9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hPb-Xk-rRb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홍보관" id="UHw-Qb-J5n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Y9-EL-oEn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DG5-iB-c71" kind="relationship" relationship="rootViewController" id="NmL-ST-kPl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7D-Wb-kux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="1383"/>
         </scene>
     </scenes>
     <resources>
